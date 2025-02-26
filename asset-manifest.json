@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReizMovies/static/css/main.248a9c54.css",
-    "main.js": "/ReizMovies/static/js/main.2aee9f4e.js",
+    "main.css": "/ReizMovies/static/css/main.13ceabf8.css",
+    "main.js": "/ReizMovies/static/js/main.917f378a.js",
     "static/js/453.a160dc93.chunk.js": "/ReizMovies/static/js/453.a160dc93.chunk.js",
     "index.html": "/ReizMovies/index.html",
-    "main.248a9c54.css.map": "/ReizMovies/static/css/main.248a9c54.css.map",
-    "main.2aee9f4e.js.map": "/ReizMovies/static/js/main.2aee9f4e.js.map",
+    "main.13ceabf8.css.map": "/ReizMovies/static/css/main.13ceabf8.css.map",
+    "main.917f378a.js.map": "/ReizMovies/static/js/main.917f378a.js.map",
     "453.a160dc93.chunk.js.map": "/ReizMovies/static/js/453.a160dc93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.248a9c54.css",
-    "static/js/main.2aee9f4e.js"
+    "static/css/main.13ceabf8.css",
+    "static/js/main.917f378a.js"
   ]
 }
