@@ -66,16 +66,16 @@ export const Home = () => {
         break;
       case "Premiered ascending":
         movies.sort((a, b) => {
-          const movie1 = a.premiered;
-          const movie2 = b.premiered;
+          const movie1 = new Date(a.premiered).getTime();
+          const movie2 = new Date(b.premiered).getTime();
           if (movie1 > movie2) return 1;
           return -1;
         });
         break;
       case "Premiered descending":
         movies.sort((a, b) => {
-          const movie1 = a.premiered;
-          const movie2 = b.premiered;
+          const movie1 = new Date(a.premiered).getTime();
+          const movie2 = new Date(b.premiered).getTime();
           if (movie1 < movie2) return 1;
           return -1;
         });
