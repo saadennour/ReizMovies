@@ -149,14 +149,22 @@ export const Home = () => {
           setValues={setStatus}
         />
       </div>
-      <div className="w-full flex flex-wrap justify-between py-5 gap-3 xl:gap-5">
-        {currentItems &&
-          currentItems.map((movie) => (
+      {currentItems && currentItems.length === 0 && (
+        <div className="w-full flex-1 flex items-center justify-center">
+          <p className="text-3xl lg:text-4xl text-center">
+            Ooops ... There is nothing here ! Try adjusting your filters.
+          </p>
+        </div>
+      )}
+      {currentItems && currentItems.length > 0 && (
+        <div className="w-full flex flex-wrap justify-between py-5 gap-3 xl:gap-5">
+          {currentItems.map((movie) => (
             <div key={movie.id} className="max-md:w-full w-[47%]">
               <Card movie={movie} />
             </div>
           ))}
-      </div>
+        </div>
+      )}
       <ReactPaginate
         breakLabel="..."
         nextClassName="hidden"
