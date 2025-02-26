@@ -1,0 +1,34 @@
+.switch-btn {
+	background-color: #202020;
+	border-radius: 99px;
+	transition: background-color 0.1s ease;
+	box-shadow: 1px 1xp 10px rgba(0, 0, 0, 748);
+	position: relative;
+}
+
+.switch-btn .switch {
+	transform: translateX(0);
+	transition: left 0.15s ease;
+	position: absolute;
+	left: 26px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.switch-btn.toggled {
+	background-color: #c4c4c4;
+}
+
+
+.switch-btn.toggled .switch {
+	left: 4px;
+}
+
+@media screen and (max-width: 767px) {
+	.switch-btn .switch {
+		left: 13px;
+	}
+	.switch-btn.toggled .switch {
+		left: 3px;
+	}
+}

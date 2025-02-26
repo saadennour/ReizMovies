@@ -1,0 +1,16 @@
+.card {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.shadow {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.shadow:hover {
+    box-shadow: 1px 1px 20px 3px #15b58e ;
+    background-color: transparent;
+}
