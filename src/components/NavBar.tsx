@@ -10,7 +10,7 @@ export const NavBar = () => {
       <div className="flex items-center">
         <Link to={"/"}>
           <img
-            src="/ReizWhite.png"
+            src="/ReizMovies/ReizWhite.png"
             alt="Reiz Logo"
             height={100}
             width={100}

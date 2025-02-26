@@ -29,6 +29,7 @@ export const Card: React.FC<CardProps> = ({ movie }) => {
 
   return (
     <div
+      data-aos="fade-up"
       onClick={() => navigate(`/overview/${movie.id}`)}
       className="cursor-pointer bg-transparent shadow flex md:h-52 xl:h-96 overflow-hidden gap-3 hover:p-2 transition hover:scale-[102%] hover:delay-300"
     >
