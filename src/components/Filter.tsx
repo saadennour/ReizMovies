@@ -4,15 +4,17 @@ import { CheckBox } from "./CheckBox";
 interface FilterProps {
   name: string;
   options: string[];
-  values: string[];
-  setValues(e: string[]): any;
+  values: string[] | string;
+  setValues(e: any): any;
+  multiselection: boolean;
 }
 
-export const GenreFilter: React.FC<FilterProps> = ({
+export const Filter: React.FC<FilterProps> = ({
   name,
   options,
   values,
   setValues,
+  multiselection,
 }) => {
   return (
     <details className="relative cursor-pointer">
@@ -26,7 +28,7 @@ export const GenreFilter: React.FC<FilterProps> = ({
               values={values}
               setValues={setValues}
               option={option}
-              multiselection={true}
+              multiselection={multiselection}
             />
             <label>{option}</label>
           </div>

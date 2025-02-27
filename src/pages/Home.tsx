@@ -1,7 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
-import { GenreFilter } from "../components/GenreFilter";
+import { Filter } from "../components/Filter";
 import { SortFilter } from "../components/SortFilter";
-import { StatusFilter } from "../components/StatusFilter";
 import { Card } from "../components/Card";
 import ReactPaginate from "react-paginate";
 import { usePagination } from "../hooks/usePagination";
@@ -126,7 +125,7 @@ export const Home = () => {
           ]}
           setValue={setSort}
         />
-        <GenreFilter
+        <Filter
           name={`Genres filter ${
             genres.length > 0 ? `(${genres.length})` : ""
           }`}
@@ -142,11 +141,14 @@ export const Home = () => {
           ]}
           values={genres}
           setValues={setGenres}
+          multiselection={true}
         />
-        <StatusFilter
+        <Filter
+          name="Status filter"
           options={["All", "Ended", "Running", "To Be Determined"]}
           values={status}
           setValues={setStatus}
+          multiselection={false}
         />
       </div>
       {currentItems && currentItems.length === 0 && (
